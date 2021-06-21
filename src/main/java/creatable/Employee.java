@@ -1,12 +1,16 @@
-package projectPackage;
+package creatable;
 
 
 public class Employee {
 
-	int empNo;
-	String empName;
-	double salary;
-	Address address;
+	private int empNo;
+	private String empName;
+	private double salary;
+	private Address address;
+	
+	public Employee(int empNo) {
+		this.empNo = empNo;
+	}
 	
 	public Employee(int empNo, String empName, double salary, Address address) {
 		super();
@@ -18,10 +22,6 @@ public class Employee {
 
 	public int getEmpNo() {
 		return empNo;
-	}
-
-	public void setEmpNo(int empNo) {
-		this.empNo = empNo;
 	}
 
 	public String getEmpName() {

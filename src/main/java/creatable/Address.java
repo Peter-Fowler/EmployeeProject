@@ -1,11 +1,11 @@
-package projectPackage;
+package creatable;
 
 
 public class Address {
 
-	String city;
+	private String city;
 	
-	String state;
+	private String state;
 
 	public Address(String city, String state) {
 		super();
